@@ -82,10 +82,15 @@
 /* メニュー黒ポチを消す */
 .nav_list {
   list-style: none;
-  margin-left: 430px;
+  margin-left: 85%;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
-  right: 70%;/* メニューを画面に入れる */
+  right: 87%;/* メニューを画面に入れる */
 }
+
+/* 以下ハンバーガータグ以外のCSS

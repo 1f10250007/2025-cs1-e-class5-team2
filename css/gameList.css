@@ -1,4 +1,4 @@
-/* ここから下がハンバーガーメニューに関するCSS */
+*/* ここから下がハンバーガーメニューに関するCSS */
   
 /* チェックボックスを非表示にする */
 .drawer_hidden {
@@ -73,9 +73,11 @@
 /* メニュー黒ポチを消す */
 .nav_list {
   list-style: none;
+  margin-left: 85%;
+  margin-right: 10px;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
-  right: 0;/* メニューを画面に入れる */
+  right: 87%;/* メニューを画面に入れる */
 }
