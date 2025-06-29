@@ -19,17 +19,21 @@
     
         <!-- メニュー -->
         <nav class="nav_content">
-          <ul class="nav_list">
-            <br>
-            <br>
-            <li class="nav_item"><a href="index.html">ホームページ</a></li>
-            <li class="nav_item"><a href="cardGameList.html">カードゲームまとめ</a></li>
-            <li class="nav_item"><a href="boardGameList.html">ボードゲームまとめ</a></li>
-          </ul>
+          <br>
+          <br>
+          <br>
+          <div><button onclick="location.href='index.html'" id="homepageButton" class="nav_item">ホームページ</button></div>
+          <div><button onclick="location.href='cardGameList.html'" id="cardGameListPageButton" class="nav_item">カードゲームまとめ</button></div>
+          <div><button onclick="location.href='boardGameList.html'" id="boardGameListPageButton" class="nav_item">ボードゲームまとめ</button></div>
+          <div><button onclick="history.back()" id="backButton" class="nav_item">１ページ戻る</button></div>
         </nav>
    
       </div>
     </header>
+
+    <h1 class="titleber">Game Introduction Site</h1>
+    <br>
+    <br>
 
     <h1 id="title">ゲーム紹介サイト</h1>
     <img id="title" src="./picture/titlelogo.png" alt="ゲーム紹介サイト" width="500" height="250">
