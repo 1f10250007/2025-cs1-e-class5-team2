@@ -101,22 +101,23 @@
   border:#E1DED6 solid 2px;
 }
 
-#homepageButton{
+.homepageButton{
   margin-right: 30px;
   background-color: #F2C65F;
 }
 
-#cardGameListPageButton{
+.cardGameListPageButton{
   background-color: #F04947;
 }
 
-#boardGameListPageButton{
+.boardGameListPageButton{
   background-color: #4778F0;
 }
 
-#backButton{
+.backButton{
   margin-right: 30px;
 }
+
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>将棋の紹介</title>
+    <link rel="stylesheet" type="text/css" href="/css/gameList.css">
+  </head> 
+  <body>
+    <header class="header">
+    
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <br>
+          <br>
+          <br>
+          <div><button onclick="location.href='index.html'" class="nav_item homepageButton">ホームページ</button></div>
+          <div><button onclick="location.href='cardGameList.html'" class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
+          <div><button onclick="location.href='boardGameList.html'" class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
+          <div><button onclick="history.back()" class="nav_item backButton">１ページ戻る</button></div>
+        </nav>
+   
+      </div>
+    </header>
+
+    <h1 class="titleber">Game Introduction Site</h1>
+    <br>
+    <br>
+
+    <main>
+        <section>
+            <h2>未来を読んで、相手玉を詰まそう！</h2>
+            <div class="game-info">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"  width="400">
+                <div class="overview">
+                <h3>ゲームの概要</h3>
+                <dl>
+                    <dt>プレイ人数</dt>
+                    <dd>2人</dd>
+                    <dt>使うもの</dt>
+                    <dd>将棋盤</dd>
+                    <dd>将棋の駒　計9種40枚</dd>
+                    <dt>ゲームの目的</dt>
+                    <dd>自玉が詰まされるよりも先に相手玉を詰ます</dd>
+                </dl>
+                </div>
+            </div>
+        </section>
+    <hr>
+
+    <section class="rules">
+      <details>
+        <summary>
+          <h3>基本的なルール説明（クリックで開く）</h3>
+        </summary>
+        <ol>
+          <li>
+            <h4>ゲームの準備</h4>
+            <p>各プレイヤーに手札を7枚ずつ配ります。山札から1枚めくり、場に置きます。</p>
+          </li>
+          <li>
+            <h4>カードを出す</h4>
+            <p>最初のプレイヤーから時計回りに、場のカードと同じ「色」か「数字」のカードを出していきます。</p>
+          </li>
+          <li>
+            <h4>特殊カード</h4>
+            <p><strong>スキップ（次の人を飛ばす）</strong>、<strong>リバース（順番を逆にする）</strong>、<strong>ドロー2（次の人は2枚引く）</strong>など、様々な効果を持つカードがあります。</p>
+          </li>
+          <li>
+            <h4>UNO！と叫ぶ</h4>
+            <p>手札が残り1枚になったら、必ず「<strong>UNO！</strong>」と叫ばなければなりません。叫び忘れると、他のプレイヤーに指摘された場合にペナルティを受けます。</p>
+          </li>
+          <li>
+            <h4>ゲーム終了</h4>
+            <p>手札のカードを全てなくした人が勝ちです。他のプレイヤーは残ったカードの点数を計算し、勝者がポイントを獲得します。</p>
+          </li>
+        </ol>
+        </details>
+        </section>
+    </main>
+  </body>
+</html>
