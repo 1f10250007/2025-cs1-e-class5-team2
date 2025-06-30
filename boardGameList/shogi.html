@@ -36,27 +36,38 @@
     <br>
 
     <main>
-        <section>
-            <h2>未来を読んで、相手玉を詰まそう！</h2>
-            <div class="game-info">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"  width="400">
-                <div class="overview">
-                <h3>ゲームの概要</h3>
-                <dl>
-                    <dt>プレイ人数</dt>
-                    <dd>2人</dd>
-                    <dt>使うもの</dt>
-                    <dd>将棋盤</dd>
-                    <dd>将棋の駒　計9種40枚</dd>
-                    <dt>ゲームの目的</dt>
-                    <dd>自玉が詰まされるよりも先に相手玉を詰ます</dd>
-                </dl>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div class="center">
+        <h2>将棋</h2>
+        <h2>未来を読んで、相手玉を詰まそう！</h2>
+        <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E5%88%9D%E6%9C%9F%E9%85%8D%E7%BD%AE.JPG?raw=true"  width="400">
+        </div>
+      </section>
+      <section>
+        <h2>List</h2>
+        <ul>
+          <li><a href="#shogi1_outline">ゲームの概要</a></li>
+          <li><a href="#shogi_rules">ルール</a></li>
+          <li>戦法</li>
+          <li>詰将棋</li>
+        </ul>
+      </section>
+      <section id="shogi_outline">
+        <h3>ゲームの概要</h3>
+        <dl>
+          <dt>プレイ人数</dt>
+          <dd>2人</dd>
+          <dt>使うもの</dt>
+          <dd>将棋盤</dd>
+          <dd>将棋の駒　計9種40枚</dd>
+          <dt>ゲームの目的</dt>
+          <dd>自玉が詰まされるよりも先に相手玉を詰ます</dd>
+        </dl>
+      </section>
+      
     <hr>
 
-    <section class="rules">
+    <section class="rules" id="shogi_rules">
       <details>
         <summary>
           <h3>基本的なルール説明（クリックで開く）</h3>
@@ -64,11 +75,12 @@
         <ol>
           <li>
             <h4>ゲームの準備</h4>
-            <p>各プレイヤーに手札を7枚ずつ配ります。山札から1枚めくり、場に置きます。</p>
+            <p>下記の写真のように駒を並べます。玉と王の差はあまりないので気にしなくて大丈夫です。</p>
+            <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E5%88%9D%E6%9C%9F%E9%85%8D%E7%BD%AE.JPG?raw=true" width="400">
           </li>
           <li>
-            <h4>カードを出す</h4>
-            <p>最初のプレイヤーから時計回りに、場のカードと同じ「色」か「数字」のカードを出していきます。</p>
+            <h4>先攻後攻の決定</h4>
+            <p>どちらか一方のプレイヤーが５枚の「歩」を振り、表が多ければ振った人が先手、裏が多ければ振っていないほうが先手になります。</p>
           </li>
           <li>
             <h4>特殊カード</h4>
