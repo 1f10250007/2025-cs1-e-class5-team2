@@ -1,4 +1,13 @@
-*/* ここから下がハンバーガーメニューに関するCSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #fff;
+}
+
+
+/* ここから下がハンバーガーメニューに関するCSS */
   
 /* チェックボックスを非表示にする */
 .drawer_hidden {
@@ -12,7 +21,7 @@
   width: 60px;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 100;/* 重なり順を一番上にする */
   cursor: pointer;
 }
@@ -67,7 +76,10 @@
   z-index: 99;
   background: #fff;
   transition: .5s;
-  text-align: left;
+  margin-left: 85%;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: right;
 }
 
 /* メニュー黒ポチを消す */
@@ -75,9 +87,55 @@
   list-style: none;
   margin-left: 85%;
   margin-right: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.nav_item {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 3em;
+  margin-left: 85%;
+  margin-right: 15px;
+  margin-top: 10px;
+  border:#E1DED6 solid 2px;
+}
+
+#homepageButton{
+  margin-right: 30px;
+  background-color: #F2C65F;
+}
+
+#cardGameListPageButton{
+  background-color: #F04947;
+}
+
+#boardGameListPageButton{
+  background-color: #4778F0;
+}
+
+#backButton{
+  margin-right: 30px;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
   right: 87%;/* メニューを画面に入れる */
+}
+
+
+/* 以下ハンバーガータグ以外のCSS */
+@media screen and (min-width : 640px){
+  .titleber {
+  position: fixed;
+  z-index: 98;
+  top: 0px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  background-color: #BDA1E8;
+  border-bottom: #333 solid 6px;
+  }
 }
