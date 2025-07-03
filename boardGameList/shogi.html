@@ -22,9 +22,9 @@
           <br>
           <br>
           <br>
-          <div><button onclick="location.href='index.html'" class="nav_item homepageButton">ホームページ</button></div>
-          <div><button onclick="location.href='cardGameList.html'" class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
-          <div><button onclick="location.href='boardGameList.html'" class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
+          <div><button onclick="location.href='/index.html'" class="nav_item homepageButton">ホームページ</button></div>
+          <div><button onclick="location.href='/cardGameList.html'" class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
+          <div><button onclick="location.href='/boardGameList.html'" class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
           <div><button onclick="history.back()" class="nav_item backButton">１ページ戻る</button></div>
         </nav>
    
@@ -46,10 +46,11 @@
       <section>
         <h2>List</h2>
         <ul>
-          <li><a href="#shogi1_outline">ゲームの概要</a></li>
+          <li><a href="#shogi_outline">ゲームの概要</a></li>
           <li><a href="#shogi_rules">ルール</a></li>
-          <li>戦法</li>
-          <li>詰将棋</li>
+          <li><a href="">駒の動かし方</a></li>
+          <li><a href="">戦法</a></li>
+          <li><a href="">詰将棋</a></li>
         </ul>
       </section>
       <section id="shogi_outline">
@@ -72,9 +73,10 @@
         <summary>
           <h3>基本的なルール説明（クリックで開く）</h3>
         </summary>
+        <h3>ゲームの始め方</h3>
         <ol>
           <li>
-            <h4>ゲームの準備</h4>
+            <h4>駒を並べる</h4>
             <p>下記の写真のように駒を並べます。玉と王の差はあまりないので気にしなくて大丈夫です。</p>
             <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E5%88%9D%E6%9C%9F%E9%85%8D%E7%BD%AE.JPG?raw=true" width="400">
           </li>
@@ -83,18 +85,44 @@
             <p>どちらか一方のプレイヤーが５枚の「歩」を振り、表が多ければ振った人が先手、裏が多ければ振っていないほうが先手になります。</p>
           </li>
           <li>
-            <h4>特殊カード</h4>
-            <p><strong>スキップ（次の人を飛ばす）</strong>、<strong>リバース（順番を逆にする）</strong>、<strong>ドロー2（次の人は2枚引く）</strong>など、様々な効果を持つカードがあります。</p>
-          </li>
-          <li>
-            <h4>UNO！と叫ぶ</h4>
-            <p>手札が残り1枚になったら、必ず「<strong>UNO！</strong>」と叫ばなければなりません。叫び忘れると、他のプレイヤーに指摘された場合にペナルティを受けます。</p>
-          </li>
-          <li>
-            <h4>ゲーム終了</h4>
-            <p>手札のカードを全てなくした人が勝ちです。他のプレイヤーは残ったカードの点数を計算し、勝者がポイントを獲得します。</p>
+            <h4>対局開始！</h4>
+            <p>一方の王が取られるか反則、（タイマーがあれば）時間切れになるまで指します。<br>（先に王を取られた、反則をした、時間切れをしたほうが負けです）</p>
           </li>
         </ol>
+        <h3></h3>
+        <h3>反則について</h3>
+        <ul>
+          <li>
+            <h4>反則１</h4>
+            <p>駒が動けないところに駒を打つことができません。</p>
+            <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E5%8F%8D%E5%89%87.JPG?raw=true" width="400">
+          </li>
+          <li>
+            <h4>反則２</h4>
+            <p>駒が動けない場所に駒を動かしてはいけません</p>
+          </li>
+          <li>
+            <h4>反則３</h4>
+            <p>自分の手番でないときに指してはいけません（二手指し）</p>
+          </li>
+          <li>
+            <h3>反則４</h3>
+            <p>縦一列に自分の歩が２枚並んではいけません（二歩）。なお、と金と歩が並ぶのは反則ではありません。</p>
+          </li>
+          <li>
+            <h3>反則５</h3>
+            <p>連続王手の千日手（千日手については後述）をしてはいけません。</p>
+          </li>
+        </ul>
+        <h3>特殊なものについて</h3>
+        <ul>
+          <li>
+            <h4>千日手</h4>
+            <p>同一局面が４回なると手番の先後を入れ替えて指し直しになります。</p>
+            <h4>入玉</h4>
+            <p></p>
+          </li>
+        </ul>
         </details>
         </section>
     </main>
