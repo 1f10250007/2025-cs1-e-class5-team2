@@ -46,15 +46,16 @@
       <section>
         <h2>List</h2>
         <ul>
-          <li><a href="#shogi_outline">ゲームの概要</a></li>
-          <li><a href="#shogi_rules">ルール</a></li>
-          <li><a href="#shogi_move">駒の動かし方</a></li>
-          <li><a href="">戦法</a></li>
+          <li><a href="#shogiOutline">ゲームの概要</a></li>
+          <li><a href="#shogiRules">ルール</a></li>
+          <li><a href="#shogiMove">駒の動かし方</a></li>
+          <li><a href="#shogiStrategy">戦法</a></li>
+          <li><a href="#shogiKakoi">囲い</a></li>
           <li><a href="">詰将棋</a></li>
         </ul>
       </section>
       <hr>
-      <section id="shogi_outline">
+      <section id="shogiOutline">
         <h3>ゲームの概要</h3>
         <dl>
           <dt>プレイ人数</dt>
@@ -69,7 +70,7 @@
       
       <hr>
 
-      <section id="shogi_rules">
+      <section id="shogiRules">
         <details>
           <summary><h3 class="inblock">基本的なルール説明</h3></summary>
           <h3>ゲームの始め方</h3>
@@ -96,11 +97,11 @@
           <ul>
             <li>
               <h4>駒を取る、打つ</h4>
-              <p>自分が進めた駒のマスに相手の駒がある場合、それを取ることができます。取った駒は駒台（下図青枠で示されている台）に置いときましょう。<br>また、取った駒は次の手番から、手番を消費して盤上の好きなところ（一部例外あり、<a href="#shogi_utihudume">打ち歩詰め</a>と<a href="#shogi_hansoku1">反則１</a>を参照してください）に置くことができます。</p>
+              <p>自分が進めた駒のマスに相手の駒がある場合、それを取ることができます。取った駒は駒台（下図青枠で示されている台）に置いときましょう。成駒を取った場合、取った後は成る前の駒として扱われます。<br>また、取った駒は次の手番から、手番を消費して盤上の好きなところ（一部例外あり、<a href="#shogiHansoku6">打ち歩詰め</a>と<a href="#shogiHansoku1">反則１</a>を参照してください）に置くことができます。</p>
               <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A7%92%E5%8F%B0.JPG?raw=true" width="400">
             </li>
             <li>
-              <h4 id="shogi_naru">成る</h4>
+              <h4 id="shogiNaru">成る</h4>
               <p>相手陣（下図の青い領域）に入るか、相手陣の中で駒を進める、または相手陣から出る際に駒を「成る」ことができます。ただし、駒を打った直後は成ることができず、打った駒を再度動かすことで成る（駒を裏がえし、駒の動きを変える）ことができます。また、成らない（不成）こともできます。ただし、成った駒は相手に取られない限り成らない状態に戻ることはできません。</p>
               <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%99%A3%E5%9C%B0.JPG?raw=true" width="400">
               <p>赤い領域は自陣です。相手も自陣に駒を進めるなどによって同様に成ることができます。</p>
@@ -115,7 +116,7 @@
               <ul>
                 <li>
                   <h4>持将棋（引き分け）にする</h4>
-                  <p>条件：相入玉（自分の王（玉）が相手陣に、相手の玉が自陣にいる状態）かつ盤上の駒と持ち駒の点数が両者とも２４点以上である必要があります。点数計算は以下の通りです。<br><br>飛車・角：各５点<br>王（玉）：０点<br>その他の駒：各１点<br>で合計を出します。<br><br>２４点未満の場合は負けとなります</p>
+                  <p>条件：相入玉（自分の王（玉）が相手陣に、相手の玉が自陣にいる状態）かつ盤上の駒と持ち駒の点数が両者とも２４点以上である必要があります。点数計算は以下の通りです。<br><br>飛車・角：各５点<br>王（玉）：０点<br>その他の駒：各１点<br>で合計を出します。なお、成った駒は成る前の駒で計算してください。<br><br>２４点未満の場合は負けとなります</p>
                 </li>
                 <li>
                   <h4>入玉宣言法</h4>
@@ -128,12 +129,12 @@
           <ul>
             <li>
               <h4>反則１</h4>
-              <p>駒が動けないところ（駒の移動先が<strong>すべて</strong>盤面外になってしまう場所）に駒を打つことができません。歩と香車と桂馬を打つときに注意してください。<br>駒を進めた先が、駒を動かせない場所だった場合は<a href="#shogi_naru">「成る」</a>必要があります。</p>
+              <p>駒が動けないところ（駒の移動先が<strong>すべて</strong>盤面外になってしまう場所）に駒を打つことができません。歩と香車と桂馬を打つときに注意してください。<br>駒を進めた先が、駒を動かせない場所だった場合は<a href="#shogiNaru">「成る」</a>必要があります。</p>
               <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%89%93%E3%81%A6%E3%81%AA%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D.JPG?raw=true" width="400">
             </li>
             <li>
               <h4>反則２</h4>
-              <p>駒が動けない場所(方向)に駒を動かしてはいけません。<br>駒の動かし方については<a href="#shogi_move">こちら</a>を確認してください</p>
+              <p>駒が動けない場所(方向)に駒を動かしてはいけません。<br>駒の動かし方については<a href="#shogiMove">こちら</a>を確認してください</p>
             </li>
             <li>
               <h4>反則３</h4>
@@ -149,8 +150,8 @@
               <p>連続王手の千日手をしてはいけません。</p>
             </li>
             <li>
-              <h3>反則６</h3>
-              <p>相手玉を詰ます最後の一手で駒台の歩を<strong>置く（盤上の駒を進めるのはOK）</strong>（打ち歩詰め）をしてはいけません。<br>詰ますことについては<a href="#shogi_tumi">こちら</a>を参照してください</p>
+              <h3 id="shogiHansoku6">反則６</h3>
+              <p>相手玉を詰ます最後の一手で駒台の歩を<strong>置く（盤上の駒を進めるのはOK）</strong>（打ち歩詰め）をしてはいけません。<br>詰ますことについては<a href="#shogiTumi">こちら</a>を参照してください</p>
               <br>
               <p>以下のような状況を考えてみましょう。</p>
               <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%89%93%E3%81%A1%E6%AD%A9%E8%A9%B0%E3%82%81%EF%BC%91.JPG?raw=true" width="400">
@@ -162,34 +163,56 @@
           
         </details>
       </section>
-      <section id="shogi_move">
+      <section id="shogiMove">
         <details>
           <summary><h3 class="inblock">駒の動かし方</h3></summary>
-          <h4>赤い点が駒の移動できる場所です。なお、直線で示されいる場合はその直線上のマスの上に移動できます。しかし、直線上に相手の駒がある場合はその駒のある場所までしか動くことができません。</h4>
-          <p>歩</p>
-          <img src="" width="400">
-          <p>香車</p>
-          <img src="" width="400">
-          <p>桂馬</p>
-          <img src="" width="400">
-          <p>銀将</p>
-          <img src="" width="400">
-          <p>金将</p>
-          <img src="" width="400">
-          <p>飛車</p>
-          <img src="" width="400">
-          <p>角</p>
-          <img src="" width="400">
-          <p>王（玉）</p>
-          <img src="" width="400">
+          <p>赤い点が駒の移動できる場所です。なお、直線で示されいる場合はその直線上のマスの上に移動できます。しかし、直線上に相手の駒がある場合はその駒のある場所までしか動くことができません。</p>
+          <h4>歩</h4>
+          <p>最も動ける場所が少なく、価値の低い駒。しかし、場面にとっては最も価値の高い駒にもなる。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%AD%A9.JPG?raw=true" width="400">
+          <h4>香車</h4>
+          <p>前に一直線に進める。雀差しでは大活躍！</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A6%99%E8%BB%8A.JPG?raw=true" width="400">
+          <h4>桂馬</h4>
+          <p>相手の駒を飛び越えれる唯一の駒。「三桂あって詰まぬ事なし」ともいわれる。しかし実際には「三桂あって詰んだ試しなし」と冗談で言われる模様。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%A1%82%E9%A6%AC.JPG?raw=true" width="400">
+          <h4>銀将</h4>
+          <p>攻めのための主要の駒の一つ。飛車角銀桂で相手を攻めよう！</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%8A%80.JPG?raw=true" width="400">
+          <h4>金将</h4>
+          <p>守りの駒と言ったらやっぱりこの駒！隙が少なく飛車角香を除けば王の次に動ける場所が多いです。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%87%91.JPG?raw=true" width="400">
+          <h4>飛車</h4>
+          <p>縦横無尽に動き回る攻めの主要の駒の一つ。この駒を成らせれば勝利に一歩大きく近づきます。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <h4>角</h4>
+          <p>遠距離から攻めをサポートする攻めの主要の駒の一つ。将棋の駒は斜めに動けるものが少ないため、局面によっては飛車よりも大活躍します。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E8%A7%92.JPG?raw=true" width="400">
+          <h4>王（玉）</h4>
+          <p>王様。相手に取られてはいけない。王手見逃しや飛車を可愛がりすぎて取られないように注意。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E7%8E%89.JPG?raw=true" width="400">
           <br>
           <p>以下は成った後の駒の動きです。</p>
-          <p>竜</p>
+          <h4>竜</h4>
+          <p>飛車の成った後の駒。斜めにも動けるようになり、機動性が上昇。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E7%AB%9C.JPG?raw=true" width="400">
+          <h4>馬</h4>
+          <p>角の成った後の駒。馬の守りは金銀三枚！（推定）</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A6%AC.JPG?raw=true" width="400">
+          <h4>と金、成香、成桂、成銀</h4>
+          <p>歩が成ったらと金に、香車が成ったら成香に、桂馬が成ったら成桂に、銀が成ったら成銀になります。動きは金と全く同じです。<br>と金は相手が取っても歩にしかなりませんが駒の働きは金なので強力です。</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%88%90%E3%82%8A%E9%A7%92.JPG?raw=true" width="400">
+        </details>
+      </section>
+      <section id="shogiStrategy">
+        <details>
+          <summary><h3 class="inblock">戦法</h3></summary>
+          <p>将棋には様々な戦法があります。そのうち基本的な大枠を説明します。</p>
+          <br>
+          <h4>居飛車</h4>
+          <p>飛車を初期位置の縦のライン（２筋）を基本として戦う方法です。主に飛車角銀桂または飛車角銀で攻めます。</p>
           <img src="" width="400">
-          <p>馬</p>
-          <img src="" width="400">
-          <P>と金、成香、成桂、成銀</P>
-          <img src="" width="400">
+          
         </details>
       </section>
     </main>
