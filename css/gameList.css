@@ -144,3 +144,7 @@
 .center{
   text-align: center;
 }
+
+.inblock{
+  display: inline-block;
+}
