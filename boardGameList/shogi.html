@@ -50,7 +50,7 @@
           <li><a href="#shogiRules">ルール</a></li>
           <li><a href="#shogiMove">駒の動かし方</a></li>
           <li><a href="#shogiStrategy">戦法</a></li>
-          <li><a href="#shogiKakoi">囲い</a></li>
+          <li><a href="#shogiCastle">囲い</a></li>
           <li><a href="">詰将棋</a></li>
         </ul>
       </section>
@@ -160,45 +160,59 @@
               <p>このような場合、歩をひとつ前に進めることによって相手玉は詰みますが、置いているわけではないため反則にはなりません。</p>
             </li>
           </ul>
-          
+          <hr>
+          <h3>盤上の駒の位置の呼び方について</h3>
+          <p>盤上の駒は先手から見て下記の図の数字で呼ばれます。一番右下の香車であれば「１九香車」と呼ばれます。また、縦の列を「筋」、横の列を「段」と呼び、初期位置の自陣の飛車の場合、「２筋に飛車がいる」と言えます。</p>
+          <img src="" width="400">
         </details>
       </section>
       <section id="shogiMove">
         <details>
           <summary><h3 class="inblock">駒の動かし方</h3></summary>
           <p>赤い点が駒の移動できる場所です。なお、直線で示されいる場合はその直線上のマスの上に移動できます。しかし、直線上に相手の駒がある場合はその駒のある場所までしか動くことができません。</p>
+          <hr>
           <h4>歩</h4>
           <p>最も動ける場所が少なく、価値の低い駒。しかし、場面にとっては最も価値の高い駒にもなる。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%AD%A9.JPG?raw=true" width="400">
+          <hr>
           <h4>香車</h4>
           <p>前に一直線に進める。雀差しでは大活躍！</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A6%99%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>桂馬</h4>
           <p>相手の駒を飛び越えれる唯一の駒。「三桂あって詰まぬ事なし」ともいわれる。しかし実際には「三桂あって詰んだ試しなし」と冗談で言われる模様。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%A1%82%E9%A6%AC.JPG?raw=true" width="400">
+          <hr>
           <h4>銀将</h4>
           <p>攻めのための主要の駒の一つ。飛車角銀桂で相手を攻めよう！</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%8A%80.JPG?raw=true" width="400">
+          <hr>
           <h4>金将</h4>
           <p>守りの駒と言ったらやっぱりこの駒！隙が少なく飛車角香を除けば王の次に動ける場所が多いです。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%87%91.JPG?raw=true" width="400">
+          <hr>
           <h4>飛車</h4>
           <p>縦横無尽に動き回る攻めの主要の駒の一つ。この駒を成らせれば勝利に一歩大きく近づきます。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>角</h4>
           <p>遠距離から攻めをサポートする攻めの主要の駒の一つ。将棋の駒は斜めに動けるものが少ないため、局面によっては飛車よりも大活躍します。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E8%A7%92.JPG?raw=true" width="400">
+          <hr>
           <h4>王（玉）</h4>
           <p>王様。相手に取られてはいけない。王手見逃しや飛車を可愛がりすぎて取られないように注意。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E7%8E%89.JPG?raw=true" width="400">
           <br>
+          <hr>
           <p>以下は成った後の駒の動きです。</p>
           <h4>竜</h4>
           <p>飛車の成った後の駒。斜めにも動けるようになり、機動性が上昇。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E7%AB%9C.JPG?raw=true" width="400">
+          <hr>
           <h4>馬</h4>
           <p>角の成った後の駒。馬の守りは金銀三枚！（推定）</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E9%A6%AC.JPG?raw=true" width="400">
+          <hr>
           <h4>と金、成香、成桂、成銀</h4>
           <p>歩が成ったらと金に、香車が成ったら成香に、桂馬が成ったら成桂に、銀が成ったら成銀になります。動きは金と全く同じです。<br>と金は相手が取っても歩にしかなりませんが駒の働きは金なので強力です。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%88%90%E3%82%8A%E9%A7%92.JPG?raw=true" width="400">
@@ -211,22 +225,66 @@
           <br>
           <h4>居飛車</h4>
           <p>飛車を初期位置の縦のライン（２筋）を基本として戦う方法です。主に飛車角銀桂または飛車角銀で攻めます。</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E5%B1%85%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>四間飛車</h4>
           <p>振り飛車の戦法の一つ。４筋に飛車を動かします。安定感重視！</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E5%9B%9B%E9%96%93%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>三間飛車</h4>
           <p>振り飛車戦法。四間飛車より攻めが軽いですが、捌けると気持ちいです。</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E4%B8%89%E9%96%93%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>中飛車</h4>
           <p>５筋に飛車を動かします。ガンガン攻め手い人向け！</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E4%B8%AD%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>向かい飛車</h4>
           <p>相手の飛車のいる筋に飛車を振ります。Let's 飛車先逆襲！</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E5%90%91%E3%81%8B%E3%81%84%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+          <hr>
           <h4>袖飛車</h4>
           <p>３筋に飛車を回る振り飛車戦法です。相手が角道を開けるために突いた歩を攻めよう！</p>
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/strategy/%E8%A2%96%E9%A3%9B%E8%BB%8A.JPG?raw=true" width="400">
+        </details>
+      </section>
+      <section id="shogiCastle">
+        <details>
+          <summary><h3 class="inblock">囲い</h3></summary>
+          <p>囲いは王を守るためのお城です。相手からの攻めを遅らせたり防ぐのに役立ちます。ここで紹介されていない囲いもいくつかあるので気になったら調べてみてください。</p>
+          <br>
+          <h4>舟囲い</h4>
+          <p>急戦用の囲い。非常にもろいが無いよりはましである。</p>
           <img src="" width="400">
+          <br>
+          <h4>美濃囲い（平美濃）</h4>
+          <p>手数か少なく、横からの攻めに固い囲い。振り飛車御用達。</p>
+          <img src="" width="400">
+          <br>
+          <h4>高美濃囲い</h4>
+          <p>美濃囲いを少し発展させたもの。横からの攻めに若干弱くなるが、厚みが増す。</p>
+          <img src="" width="400">
+          <br>
+          <h4>銀冠</h4>
+          <p>高美濃囲いをさらに発展させたもの。上からの攻めにも強く、玉の頭から金銀桂を使って攻めることもできる。</p>
+          <img src="" width="400">
+          <br>
+          <h4>矢倉囲い</h4>
+          <p>対居飛車への囲いの一つ。上からの攻めに若干強いが横からの攻めにはめっぽう弱い。</p>
+          <img src="" width="400">
+          <br>
+          <h4>穴熊囲い</h4>
+          <p>囲めると非常に硬い。しかし組むのに手数がかかるため注意。</p>
+          <img src="" width="400">
+          <br>
+          <h4>雁木囲い</h4>
+          <p>対居飛車向けの囲いで、自陣の打ち込みの隙が少なく角交換にも強い。駒のバランスを取るのが難しいため、慣れるには練習が必要。</p>
+          <img src="" width="400">
+          <br>
+          <h4>金無双</h4>
+          <p>船囲いから６九の金をひとつ上げた囲い。先ほどまで６九の金に紐がついてたのが王だけだったが、この一手によって王以外に銀と金の紐がつき、少し硬くなった。</p>
+          <img src="" width="400">
+
         </details>
       </section>
     </main>
