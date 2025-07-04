@@ -140,3 +140,27 @@
   }
 }
 
+.inblock{
+  display: inline-block;
+}
+
+.bigButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 15px;
+  border:#E1DED6 solid 2px;
+  font-size: 30px;
+}
+
+.red{
+  background-color: #F04947;
+}
+
+.picture{
+  margin-top: px;
+}
+
