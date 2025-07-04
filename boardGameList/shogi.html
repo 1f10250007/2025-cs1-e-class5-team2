@@ -72,7 +72,7 @@
 
       <section id="shogiRules">
         <details>
-          <summary><h3 class="inblock">基本的なルール説明</h3></summary>
+          <summary><h3 class="inblock listChoice1">基本的なルール説明</h3></summary>
           <h3>ゲームの始め方</h3>
           <ol>
             <li>
@@ -165,11 +165,12 @@
           <h3>盤上の駒の位置の呼び方について</h3>
           <p>盤上の駒は先手から見て下記の図の数字で呼ばれます。例えば一番右下の香車をひとつ進めた場合は「１八香」と呼ばれます。もし持ち駒に桂馬があり、１八に打った場合は「１八桂打」といいます。また、縦の列を「筋」、横の列を「段」と呼び、初期位置の自陣の飛車の場合、「２筋に飛車がいる」と言えます。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E7%9B%A4%E9%9D%A2%E8%AA%AD%E3%81%BF%E6%96%B9.JPG?raw=true" width="400">
+          <hr>
         </details>
       </section>
       <section id="shogiMove">
         <details>
-          <summary><h3 class="inblock">駒の動かし方</h3></summary>
+          <summary><h3 class="inblock listChoice2">駒の動かし方</h3></summary>
           <p>赤い点が駒の移動できる場所です。なお、直線で示されいる場合はその直線上のマスの上に移動できます。しかし、直線上に相手の駒がある場合はその駒のある場所までしか動くことができません。</p>
           <hr>
           <h4>歩</h4>
@@ -217,11 +218,12 @@
           <h4>と金、成香、成桂、成銀</h4>
           <p>歩が成ったらと金に、香車が成ったら成香に、桂馬が成ったら成桂に、銀が成ったら成銀になります。動きは金と全く同じです。<br>と金は相手が取っても歩にしかなりませんが駒の働きは金なので強力です。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/rule/%E6%88%90%E3%82%8A%E9%A7%92.JPG?raw=true" width="400">
+          <hr>
         </details>
       </section>
       <section id="shogiStrategy">
         <details>
-          <summary><h3 class="inblock">戦法</h3></summary>
+          <summary><h3 class="inblock listChoice3">戦法</h3></summary>
           <p>将棋には様々な戦法があります。そのうち基本的な大枠を説明します。</p>
           <br>
           <h4>居飛車</h4>
@@ -251,7 +253,7 @@
       </section>
       <section id="shogiCastle">
         <details>
-          <summary><h3 class="inblock">囲い</h3></summary>
+          <summary><h3 class="inblock listChoice4">囲い</h3></summary>
           <p>囲いは王を守るためのお城です。相手からの攻めを遅らせたり防ぐのに役立ちます。ここで紹介されていない囲いもいくつかあるので気になったら調べてみてください。</p>
           <br>
           <h4>舟囲い</h4>
@@ -285,25 +287,26 @@
           <h4>金無双</h4>
           <p>船囲いから６九の金をひとつ上げた囲い。先ほどまで６九の金に紐がついてたのが王だけだったが、この一手によって王以外に銀と金の紐がつき、少し硬くなった。</p>
           <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/castle/%E9%87%91%E7%84%A1%E5%8F%8C.JPG?raw=true" width="400">
+          <hr>
         </details>
       </section>
       <section id="shogiTume">
         <details>
-          <summary><h3 class="inblock">詰将棋</h3> </summary>
+          <summary><h3 class="inblock listChoice5">詰将棋</h3> </summary>
           <p>詰将棋は相手玉を詰ますという勝ちに直結する力を鍛えるものです。まずは「詰み」というのはどういうものか解説します。<br>「詰み」とは、王手がかかっており、玉が逃げたり王手をかけている駒を取ったり、王手をかけている駒が飛車や角であればその駒の利き（通り道・駒が動ける場所）に駒を置くなどすることができない状況のことです。</p>
           <p>最初は<strong>「頭金」</strong>という詰みの基本系を紹介します。</p>
           <p>この局面で玉を詰ますにはどうすればいいでしょうか。</p>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/tume/%E9%A0%AD%E9%87%91.JPG?raw=true" width="400">
           <p>玉の動ける場所と歩の利き（駒が進める場所）をはじめに確認しましょう。<br>玉は５か所に動くことができます。対して歩はそのうちの一か所に利いています。<br>次に持ち駒を確認しましょう。持ち駒は金です。金をどこに置けば詰みでしょうか？</p>
           <details>
             <summary><h4 class="inblock">正解</h4></summary>
-            <img src="" width="400">
+            <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/tume/%E9%A0%AD%E9%87%91%EF%BC%92.JPG?raw=true" width="400">
             <p>正解は歩の先、王の頭に金を置く手です。王の動ける場所はすべて金が利いています。また、王は金を取った後、歩で王を取られてしまうため、王は金を取ることができません。したがって詰んでいます。</p>
             <p>また、ｎ手（最長手数）で相手を詰ませられるものを「ｎ手詰み」といい、三手詰めなどは相手の応手を考える必要があります。</p>
           </details>
           <hr>
           <h4>５手詰め</h4>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/tume/%EF%BC%95%E6%89%8B%E8%A9%B0%E3%82%81.JPG?raw=true" width="400">
           <p>これは最長５手で詰みます。相手の応手によっては３手でも詰みますが、すべてのパターンを認識できるようにしましょう。</p>
           <details>
             <summary><h4 class="inblock">正解</h4></summary>
@@ -311,7 +314,7 @@
           </details>
           <hr>
           <h4>５手詰め（打ち歩詰め回避）</h4>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/tume/%E6%89%93%E3%81%A1%E6%AD%A9%E8%A9%B0%E3%82%81%E5%9B%9E%E9%81%BF.JPG?raw=true" width="400">
           <p>１三歩打で一見詰みそうですが、それは打ち歩詰めとなってしまうためできません。どうにかして回避してください。</p>
           <details>
             <summary><h4 class="inblock">正解</h4></summary>
@@ -319,8 +322,9 @@
           </details>
           <hr>
           <h4>ミクロコスモス</h4>
-          <img src="" width="400">
+          <img src="https://github.com/1f10250007/2025-cs1-e-class5-team2/blob/main/picture/board/shogi/tume/%E3%83%9F%E3%82%AF%E3%83%AD%E3%82%B3%E3%82%B9%E3%83%A2%E3%82%B9.JPG?raw=true" width="400">
           <p>現在最長の１５２５手詰めです。腕に自信のある方は挑戦してみてください。なお、正解はご自身でお調べください。</p>
+          <hr>
         </details>
       </section>
     </main>

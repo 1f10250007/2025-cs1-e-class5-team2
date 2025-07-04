@@ -148,3 +148,43 @@
 .inblock{
   display: inline-block;
 }
+
+.listChoice1{
+  margin: 10px;
+  padding: 10px;
+  min-width: 170px;
+  background-color: #1e90ff;
+  text-align: center;
+}
+
+.listChoice2{
+  margin: 10px;
+  padding: 10px;
+  min-width: 170px;
+  background-color: #6495ed;
+  text-align: center;
+}
+
+.listChoice3{
+  margin: 10px;
+  padding: 10px;
+  min-width: 170px;
+  background-color: #00bfff;
+  text-align: center;
+}
+
+.listChoice4{
+  margin: 10px;
+  padding: 10px;
+  min-width: 170px;
+  background-color: #87cefa;
+  text-align: center;
+}
+
+.listChoice5{
+  margin: 10px;
+  padding: 10px;
+  min-width: 170px;
+  background-color: #87ceeb;
+  text-align: center;
+}
