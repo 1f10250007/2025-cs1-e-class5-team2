@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>トランプの紹介</title>
+  <link rel="stylesheet" type="text/css" href="../css/gameList.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="nav">
+
+      <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+      <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+      <!-- ハンバーガーアイコン -->
+      <label for="drawer_input" class="drawer_open"><span></span></label>
+
+      <!-- メニュー -->
+      <nav class="nav_content">
+        <br>
+        <br>
+        <br>
+        <div><button onclick="location.href='/index.html'" class="nav_item homepageButton">ホームページ</button></div>
+        <div><button onclick="location.href='/cardGameList.html'"
+            class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
+        <div><button onclick="location.href='/boardGameList.html'"
+            class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
+        <div><button onclick="history.back()" class="nav_item backButton">１ページ戻る</button></div>
+      </nav>
+
+    </div>
+  </header>
+
   <head>
     <meta charset="UTF-8">
     <title>トランプの紹介</title>
-    <link rel="stylesheet" type="text/css" href="../css/gameList.css">
+    <link rel="stylesheet" type="text/css" href="/css/gameList.css">
   </head>
+
   <body>
     <header class="header">
-    
+
       <!-- ハンバーガーメニュー部分 -->
       <div class="nav">
-    
+
         <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
         <input id="drawer_input" class="drawer_hidden" type="checkbox">
-    
+
         <!-- ハンバーガーアイコン -->
         <label for="drawer_input" class="drawer_open"><span></span></label>
-    
+
         <!-- メニュー -->
         <nav class="nav_content">
           <br>
@@ -25,227 +61,251 @@
           <div><button onclick="location.href='../index.html'" class="nav_item homepageButton">ホームページ</button></div>
           <div><button onclick="location.href='../cardGameList.html'" class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
           <div><button onclick="location.href='../boardGameList.html'" class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
+
           <div><button onclick="history.back()" class="nav_item backButton">１ページ戻る</button></div>
         </nav>
-   
+
       </div>
     </header>
 
     <h1 class="titleber">Game Introduction Site</h1>
     <br>
     <br>
+    <h1>トランプ</h1>
+    <ul>1.ババ抜き</ul>
+    <ul>2.神経衰弱</ul>
+    <ul>3.七並べ</ul>
+    <ul>4.大富豪</ul>
     <!-- ババ抜き -->
     <h1>ババ抜き</h1>
     </header>
 
-  <main>
-    <section>
-      <h2>ドキドキの駆け引き！ジョーカーを最後まで持っているのは誰だ！？</h2>
-      <div class="game-info">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"  width="400">
-        <div class="overview">
-          <h3>ゲームの概要</h3>
-          <dl>
-            <dt>プレイ人数</dt>
-            <dd>2人〜</dd>
-            <dt>使うもの</dt>
-            <dd>トランプ1組（ジョーカー1枚入り）</dd>
-            <dt>ゲームの目的</dt>
-            <dd>手持ちのカードを全てなくすこと</dd>
-          </dl>
+    <main>
+      <section>
+        <h2>ドキドキの駆け引き！ジョーカーを最後まで持っているのは誰だ！？</h2>
+        <div class="game-info">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"
+            width="400">
+          <div class="overview">
+            <h3>ゲームの概要</h3>
+            <dl>
+              <dt>プレイ人数</dt>
+              <dd>2人〜</dd>
+              <dt>使うもの</dt>
+              <dd>トランプ1組（ジョーカー1枚入り）</dd>
+              <dt>ゲームの目的</dt>
+              <dd>手持ちのカードを全てなくすこと</dd>
+            </dl>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr>
 
-    <section class="rules">
-      <h3>ルール説明</h3>
-      <ol>
-        <li>
-          <h4>カードを配る</h4>
-          <p>全てのカードをプレイヤーに均等に配ります。余ったカードはそのまま持ち札になります。</p>
-        </li>
-        <li>
-          <h4>ペアを捨てる</h4>
-          <p>自分の手札の中から同じ数字のカード（例：ハートの5とダイヤの5）のペアを見つけて、場に捨てます。</p>
-        </li>
-        <li>
-          <h4>カードを引く</h4>
-          <p>親から時計回りに、隣のプレイヤーのカードを1枚引きます。</p>
-        </li>
-        <li>
-          <h4>ペアを作る</h4>
-          <p>引いたカードでペアができたら、すぐに捨てます。</p>
-        </li>
-        <li>
-          <h4>繰り返す</h4>
-          <p>手札が0枚になった人から勝ち抜けです。</p>
-        </li>
-        <li>
-          <h4>ゲーム終了</h4>
-          <p>最後にジョーカーを持ってしまった人が<strong>負け</strong>になります。</p>
-        </li>
-      </ol>
-    </section>
-  </main>
-  
- <!-- 神経衰弱 -->
-  <header>
-    <h1>神経衰弱</h1>
-  </header>
+      <section class="rules">
+        <details>
+          <summary>
+            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
+          </summary>
+          <ol>
+            <li>
+              <h4>カードを配る</h4>
+              <p>全てのカードをプレイヤーに均等に配ります。余ったカードはそのまま持ち札になります。</p>
+            </li>
+            <li>
+              <h4>ペアを捨てる</h4>
+              <p>自分の手札の中から同じ数字のカード（例：ハートの5とダイヤの5）のペアを見つけて、場に捨てます。</p>
+            </li>
+            <li>
+              <h4>カードを引く</h4>
+              <p>親から時計回りに、隣のプレイヤーのカードを1枚引きます。</p>
+            </li>
+            <li>
+              <h4>ペアを作る</h4>
+              <p>引いたカードでペアができたら、すぐに捨てます。</p>
+            </li>
+            <li>
+              <h4>繰り返す</h4>
+              <p>手札が0枚になった人から勝ち抜けです。</p>
+            </li>
+            <li>
+              <h4>ゲーム終了</h4>
+              <p>最後にジョーカーを持ってしまった人が<strong>負け</strong>になります。</p>
+            </li>
+          </ol>
+        </details>
+      </section>
+    </main>
 
-  <main>
-    <section>
-      <h2>記憶力が試される！全てのペアを見つけ出そう！</h2>
-      <div class="game-info">
-        <img src="../picture/shinnkeisujaku.jpg" width="400">
-        <div class="overview">
-          <h3>ゲームの概要</h3>
-          <dl>
-            <dt>プレイ人数</dt>
-            <dd>1人〜</dd>
-            <dt>使うもの</dt>
-            <dd>トランプ1組</dd>
-            <dt>ゲームの目的</dt>
-            <dd>全てのペアを見つけること</dd>
-          </dl>
+    <!-- 神経衰弱 -->
+    <header>
+      <h1>神経衰弱</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>記憶力が試される！全てのペアを見つけ出そう！</h2>
+        <div class="game-info">
+          <img src="../picture/shinnkeisujaku.jpg" width="400">
+          <div class="overview">
+            <h3>ゲームの概要</h3>
+            <dl>
+              <dt>プレイ人数</dt>
+              <dd>1人〜</dd>
+              <dt>使うもの</dt>
+              <dd>トランプ1組</dd>
+              <dt>ゲームの目的</dt>
+              <dd>全てのペアを見つけること</dd>
+            </dl>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr>
 
-    <section class="rules">
-      <h3>ルール説明</h3>
-      <ol>
-        <li>
-          <h4>カードを並べる</h4>
-          <p>全てのカードを裏向きでテーブルに並べます。</p>
-        </li>
-        <li>
-          <h4>カードをめくる</h4>
-          <p>プレイヤーは順番に2枚のカードをめくります。</p>
-        </li>
-        <li>
-          <h4>ペアを当てる</h4>
-          <p>めくった2枚が同じ数字なら、そのペアを自分のものにし、もう一度カードをめくることができます。</p>
-        </li>
-        <li>
-          <h4>失敗したら</h4>
-          <p>違う数字だった場合、その2枚を元の場所に戻し、次のプレイヤーに交代します。</p>
-        </li>
-        <li>
-          <h4>ゲーム終了</h4>
-          <p>全てのカードがなくなったらゲーム終了です。最も多くのペアを獲得した人が勝ちです。</p>
-        </li>
-      </ol>
-    </section>
-  </main>
+      <section class="rules">
+        <details>
+          <summary>
+            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
+          </summary>
+          <ol>
+            <li>
+              <h4>カードを並べる</h4>
+              <p>全てのカードを裏向きでテーブルに並べます。</p>
+            </li>
+            <li>
+              <h4>カードをめくる</h4>
+              <p>プレイヤーは順番に2枚のカードをめくります。</p>
+            </li>
+            <li>
+              <h4>ペアを当てる</h4>
+              <p>めくった2枚が同じ数字なら、そのペアを自分のものにし、もう一度カードをめくることができます。</p>
+            </li>
+            <li>
+              <h4>失敗したら</h4>
+              <p>違う数字だった場合、その2枚を元の場所に戻し、次のプレイヤーに交代します。</p>
+            </li>
+            <li>
+              <h4>ゲーム終了</h4>
+              <p>全てのカードがなくなったらゲーム終了です。最も多くのペアを獲得した人が勝ちです。</p>
+            </li>
+          </ol>
+        </details>
+      </section>
+    </main>
 
-   <!-- 七並べ -->
-   <header>
-    <h1>七並べ</h1>
-  </header>
+    <!-- 七並べ -->
+    <header>
+      <h1>七並べ</h1>
+    </header>
 
-  <main>
-    <section>
-      <h2>トランプを順番につなげていこう！</h2>
-      <div class="game-info">
-        <img src="https://illustcut.com/box2/2023/10/shitinarabe/shitinarabe_03.png"  width="400">
-        <div class="overview">
-          <h3>ゲームの概要</h3>
-          <dl>
-            <dt>プレイ人数</dt>
-            <dd>3〜5人</dd>
-            <dt>使うもの</dt>
-            <dd>トランプ1組</dd>
-            <dt>ゲームの目的</dt>
-            <dd>手持ちのカードを全て場に出すこと</dd>
-          </dl>
+    <main>
+      <section>
+        <h2>トランプを順番につなげていこう！</h2>
+        <div class="game-info">
+          <img src="https://illustcut.com/box2/2023/10/shitinarabe/shitinarabe_03.png" width="400">
+          <div class="overview">
+            <h3>ゲームの概要</h3>
+            <dl>
+              <dt>プレイ人数</dt>
+              <dd>3〜5人</dd>
+              <dt>使うもの</dt>
+              <dd>トランプ1組</dd>
+              <dt>ゲームの目的</dt>
+              <dd>手持ちのカードを全て場に出すこと</dd>
+            </dl>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr>
 
-    <section class="rules">
-      <h3>ルール説明</h3>
-      <ol>
-        <li>
-          <h4>カードを配る</h4>
-          <p>全てのカードをプレイヤーに配ります。余ったカードは使いません。</p>
-        </li>
-        <li>
-          <h4>ゲームスタート</h4>
-          <p>ダイヤの7を持っている人が最初にそのカードを場に出します。</p>
-        </li>
-        <li>
-          <h4>カードを出す</h4>
-          <p>ダイヤの7からA、Kへと続くように、数字の続きのカード（例：ダイヤの6か8）を持っている人が順番に出していきます。</p>
-        </li>
-        <li>
-          <h4>パスをする</h4>
-          <p>出せるカードがない場合、パスができます。パスは1人3回までです。</p>
-        </li>
-        <li>
-          <h4>ゲーム終了</h4>
-          <p>手持ちのカードがなくなった人から勝ち抜けです。最後までカードが残った人が負けになります。</p>
-        </li>
-      </ol>
-    </section>
-  </main>
+      <section class="rules">
+        <details>
+          <summary>
+            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
+          </summary>
+          <ol>
+            <li>
+              <h4>カードを配る</h4>
+              <p>全てのカードをプレイヤーに配ります。余ったカードは使いません。</p>
+            </li>
+            <li>
+              <h4>ゲームスタート</h4>
+              <p>ダイヤの7を持っている人が最初にそのカードを場に出します。</p>
+            </li>
+            <li>
+              <h4>カードを出す</h4>
+              <p>ダイヤの7からA、Kへと続くように、数字の続きのカード（例：ダイヤの6か8）を持っている人が順番に出していきます。</p>
+            </li>
+            <li>
+              <h4>パスをする</h4>
+              <p>出せるカードがない場合、パスができます。パスは1人3回までです。</p>
+            </li>
+            <li>
+              <h4>ゲーム終了</h4>
+              <p>手持ちのカードがなくなった人から勝ち抜けです。最後までカードが残った人が負けになります。</p>
+            </li>
+          </ol>
+        </details>
+      </section>
+    </main>
 
-   <!-- 大富豪 -->
-   <header>
-    <h1>大富豪</h1>
-  </header>
+    <!-- 大富豪 -->
+    <header>
+      <h1>大富豪</h1>
+    </header>
 
-  <main>
-    <section>
-      <h2>革命を起こして、大富豪を目指せ！</h2>
-      <div class="game-info">
-        <img src="../picture/daifugo_image.jpg"  width="400">
-        <div class="overview">
-          <h3>ゲームの概要</h3>
-          <dl>
-            <dt>プレイ人数</dt>
-            <dd>3人〜</dd>
-            <dt>使うもの</dt>
-            <dd>トランプ1〜2組（ジョーカー含む）</dd>
-            <dt>ゲームの目的</dt>
-            <dd>手持ちのカードを早くなくして「大富豪」になること</dd>
-          </dl>
+    <main>
+      <section>
+        <h2>革命を起こして、大富豪を目指せ！</h2>
+        <div class="game-info">
+          <img src="../picture/daifugo_image.jpg" width="400">
+          <div class="overview">
+            <h3>ゲームの概要</h3>
+            <dl>
+              <dt>プレイ人数</dt>
+              <dd>3人〜</dd>
+              <dt>使うもの</dt>
+              <dd>トランプ1〜2組（ジョーカー含む）</dd>
+              <dt>ゲームの目的</dt>
+              <dd>手持ちのカードを早くなくして「大富豪」になること</dd>
+            </dl>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr>
 
-    <section class="rules">
-      <h3>ルール説明</h3>
-      <ol>
-        <li>
-          <h4>カードを配る</h4>
-          <p>全てのカードをプレイヤーに均等に配ります。</p>
-        </li>
-        <li>
-          <h4>ゲームスタート</h4>
-          <p>最も弱いカード（例：3）を持っている人が最初にカードを出します。</p>
-        </li>
-        <li>
-          <h4>カードを出す</h4>
-          <p>前の人が出したカードより強いカードを出します。同じ枚数でなければいけません（例：シングルにはシングル、ペアにはペア）。</p>
-        </li>
-        <li>
-          <h4>上がり</h4>
-          <p>手札がなくなった人から順に「大富豪」「富豪」「貧民」「大貧民」などの階級が決まります。</p>
-        </li>
-        <li>
-          <h4>ゲーム終了と交換</h4>
-          <p>全員の手札がなくなると1ゲーム終了です。次のゲームでは、階級に応じてカードを交換してから始めます。</p>
-        </li>
-      </ol>
-    </section>
-  </main>
+      <section class="rules">
+        <details>
+          <summary>
+            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
+          </summary>
+          <ol>
+            <li>
+              <h4>カードを配る</h4>
+              <p>全てのカードをプレイヤーに均等に配ります。</p>
+            </li>
+            <li>
+              <h4>ゲームスタート</h4>
+              <p>最も弱いカード（例：3）を持っている人が最初にカードを出します。</p>
+            </li>
+            <li>
+              <h4>カードを出す</h4>
+              <p>前の人が出したカードより強いカードを出します。同じ枚数でなければいけません（例：シングルにはシングル、ペアにはペア）。</p>
+            </li>
+            <li>
+              <h4>上がり</h4>
+              <p>手札がなくなった人から順に「大富豪」「富豪」「貧民」「大貧民」などの階級が決まります。</p>
+            </li>
+            <li>
+              <h4>ゲーム終了と交換</h4>
+              <p>全員の手札がなくなると1ゲーム終了です。次のゲームでは、階級に応じてカードを交換してから始めます。</p>
+            </li>
+          </ol>
+        </details>
+      </section>
+    </main>
   </body>
