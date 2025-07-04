@@ -59,8 +59,10 @@
           <br>
           <br>
           <div><button onclick="location.href='../index.html'" class="nav_item homepageButton">ホームページ</button></div>
-          <div><button onclick="location.href='../cardGameList.html'" class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
-          <div><button onclick="location.href='../boardGameList.html'" class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
+          <div><button onclick="location.href='../cardGameList.html'"
+              class="nav_item cardGameListPageButton">カードゲームまとめ</button></div>
+          <div><button onclick="location.href='../boardGameList.html'"
+              class="nav_item boardGameListPageButton">ボードゲームまとめ</button></div>
 
           <div><button onclick="history.back()" class="nav_item backButton">１ページ戻る</button></div>
         </nav>
@@ -71,7 +73,12 @@
     <h1 class="titleber">Game Introduction Site</h1>
     <br>
     <br>
-    <h1>トランプ</h1>
+    <div class="center">
+      <h1>トランプ：シンプルなルールに秘められた、奥深い戦略性。</h1>
+      <img class="center"
+        src="data:image/png;base64,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"
+        width="400">
+    </div>
     <section>
       <h2>List</h2>
       <ul>
@@ -84,34 +91,33 @@
 
 
     <main>
-      <section id='trump.Babanuki'>
-        <h2>ババ抜き</h2>
-        <h2>ドキドキの駆け引き！ジョーカーを最後まで持っているのは誰だ！？</h2>
-        <div class="game-info">
-          <img
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"
-            width="400">
-          <div class="overview">
-            <h3>ゲームの概要</h3>
-            <dl>
-              <dt>プレイ人数</dt>
-              <dd>2人〜</dd>
-              <dt>使うもの</dt>
-              <dd>トランプ1組（ジョーカー1枚入り）</dd>
-              <dt>ゲームの目的</dt>
-              <dd>手持ちのカードを全てなくすこと</dd>
-            </dl>
+      <details>
+        <summary>
+          <h3 class="inblock listChoice1">ババ抜き</h3>
+        </summary>
+        <section id='trump.Babanuki'>
+          <h2>ドキドキの駆け引き！ジョーカーを最後まで持っているのは誰だ！？</h2>
+          <div class="game-info">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2sijN7KChNxEDOFoSSyl4yEa4v1Hq-5uxYeDY_HwIaQ3vJNBePHoVdJyEXZI8wo2rUIgEkqdD7AdPxaPSWEEAenmjDC9zKYFBqmKzxx0gqk37zOD8lmT_aAWeM1n8ta7RfX4Rff2V0Zi/s800/game_trump_babanuki.png"
+              width="400">
+            <div class="overview">
+              <h3>ゲームの概要</h3>
+              <dl>
+                <dt>プレイ人数</dt>
+                <dd>2人〜</dd>
+                <dt>使うもの</dt>
+                <dd>トランプ1組（ジョーカー1枚入り）</dd>
+                <dt>ゲームの目的</dt>
+                <dd>手持ちのカードを全てなくすこと</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <hr>
+        <hr>
 
-      <section class="rules">
-        <details>
-          <summary>
-            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
-          </summary>
+        <section class="rules">
           <ol>
             <li>
               <h4>カードを配る</h4>
@@ -139,41 +145,38 @@
             </li>
           </ol>
           <hr>
-        </details>
-      </section>
+        </section>
+      </details>
     </main>
 
     <!-- 神経衰弱 -->
-    <header>
-      <h2>神経衰弱</h2>
-    </header>
 
     <main>
-      <section id='trump.Shinkeisuijaku'>
-        <h2>記憶力が試される！全てのペアを見つけ出そう！</h2>
-        <div class="game-info">
-          <img src="../picture/shinnkeisujaku.jpg" width="400">
-          <div class="overview">
-            <h3>ゲームの概要</h3>
-            <dl>
-              <dt>プレイ人数</dt>
-              <dd>1人〜</dd>
-              <dt>使うもの</dt>
-              <dd>トランプ1組</dd>
-              <dt>ゲームの目的</dt>
-              <dd>全てのペアを見つけること</dd>
-            </dl>
+      <details>
+        <summary>
+          <h3 class="inblock listChoice2">神経衰弱</h3>
+        </summary>
+        <section id='trump.Shinkeisuijaku'>
+          <h2>記憶力が試される！全てのペアを見つけ出そう！</h2>
+          <div class="game-info">
+            <img src="../picture/shinnkeisujaku.jpg" width="400">
+            <div class="overview">
+              <h3>ゲームの概要</h3>
+              <dl>
+                <dt>プレイ人数</dt>
+                <dd>1人〜</dd>
+                <dt>使うもの</dt>
+                <dd>トランプ1組</dd>
+                <dt>ゲームの目的</dt>
+                <dd>全てのペアを見つけること</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <hr>
+        <hr>
 
-      <section class="rules">
-        <details>
-          <summary>
-            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
-          </summary>
+        <section class="rules">
           <ol>
             <li>
               <h4>カードを並べる</h4>
@@ -197,41 +200,38 @@
             </li>
           </ol>
           <hr>
-        </details>
-      </section>
+        </section>
+      </details>
     </main>
 
     <!-- 七並べ -->
-    <header>
-      <h2>七並べ</h2>
-    </header>
 
     <main>
-      <section id='trump.shitinarabe'>
-        <h2>トランプを順番につなげていこう！</h2>
-        <div class="game-info">
-          <img src="https://illustcut.com/box2/2023/10/shitinarabe/shitinarabe_03.png" width="400">
-          <div class="overview">
-            <h3>ゲームの概要</h3>
-            <dl>
-              <dt>プレイ人数</dt>
-              <dd>3〜5人</dd>
-              <dt>使うもの</dt>
-              <dd>トランプ1組</dd>
-              <dt>ゲームの目的</dt>
-              <dd>手持ちのカードを全て場に出すこと</dd>
-            </dl>
+      <details>
+        <summary>
+          <h3 class="inblock listChoice3">七並べ</h3>
+        </summary>
+        <section id='trump.shitinarabe'>
+          <h2>トランプを順番につなげていこう！</h2>
+          <div class="game-info">
+            <img src="https://illustcut.com/box2/2023/10/shitinarabe/shitinarabe_03.png" width="400">
+            <div class="overview">
+              <h3>ゲームの概要</h3>
+              <dl>
+                <dt>プレイ人数</dt>
+                <dd>3〜5人</dd>
+                <dt>使うもの</dt>
+                <dd>トランプ1組</dd>
+                <dt>ゲームの目的</dt>
+                <dd>手持ちのカードを全て場に出すこと</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <hr>
+        <hr>
 
-      <section class="rules">
-        <details>
-          <summary>
-            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
-          </summary>
+        <section class="rules">
           <ol>
             <li>
               <h4>カードを配る</h4>
@@ -255,41 +255,38 @@
             </li>
           </ol>
           <hr>
-        </details>
-      </section>
+        </section>
+      </details>
     </main>
 
     <!-- 大富豪 -->
-    <header>
-      <h2>大富豪</h2>
-    </header>
 
     <main>
-      <section id='trump.Daihugou'>
-        <h2>革命を起こして、大富豪を目指せ！</h2>
-        <div class="game-info">
-          <img src="../picture/daifugo_image.jpg" width="400">
-          <div class="overview">
-            <h3>ゲームの概要</h3>
-            <dl>
-              <dt>プレイ人数</dt>
-              <dd>3人〜</dd>
-              <dt>使うもの</dt>
-              <dd>トランプ1〜2組（ジョーカー含む）</dd>
-              <dt>ゲームの目的</dt>
-              <dd>手持ちのカードを早くなくして「大富豪」になること</dd>
-            </dl>
+      <details>
+        <summary>
+          <h3 class="inblock listChoice4">大富豪</h3>
+        </summary>
+        <section id='trump.Daihugou'>
+          <h2>革命を起こして、大富豪を目指せ！</h2>
+          <div class="game-info">
+            <img src="../picture/daifugo_image.jpg" width="400">
+            <div class="overview">
+              <h3>ゲームの概要</h3>
+              <dl>
+                <dt>プレイ人数</dt>
+                <dd>3人〜</dd>
+                <dt>使うもの</dt>
+                <dd>トランプ1〜2組（ジョーカー含む）</dd>
+                <dt>ゲームの目的</dt>
+                <dd>手持ちのカードを早くなくして「大富豪」になること</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <hr>
+        <hr>
 
-      <section class="rules">
-        <details>
-          <summary>
-            <h3 class="inblock">基本的なルール説明（クリックで開く）</h3>
-          </summary>
+        <section class="rules">
           <ol>
             <li>
               <h4>カードを配る</h4>
@@ -313,7 +310,7 @@
             </li>
           </ol>
           <hr>
-        </details>
-      </section>
+        </section>
+      </details>
     </main>
   </body>
